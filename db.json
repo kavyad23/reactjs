@@ -1,0 +1,35 @@
+{
+  "getMovies": [{
+      "id": 1,
+      "movieName": "abc",
+      "category": "Action",
+      "Rating": 4,
+      "imgUrl" :"../../common/img/movie.jpg"
+  }, {
+      "id": 2,
+      "movieName": "dfg",
+      "category": "Action",
+      "Rating": 3,
+      "imgUrl" :""
+  }, {
+      "id": 3,
+      "movieName": "bnm",
+      "category": "Love",
+      "Rating": 4,
+      "imgUrl" :""
+  }, {
+      "id": 4,
+      "movieName": "xyz",
+      "category": "Comedy",
+      "Rating": 4,
+      "imgUrl" :""
+  }],
+  "comments": [{
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+  }],
+  "profile": {
+      "name": "typicode"
+  }
+}

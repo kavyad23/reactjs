@@ -10,11 +10,19 @@ function* getLoginResp() {
 }
 
 function* getMovies() {
+    console.log('getMovies')
+    // const json = yield fetch('/getmovies.json')
+    //     .then(response => response.json());
 
-    const json = yield fetch('/getmovies.json')
-        .then(response => response.json());
+    const movieResp = yield fetch('http://localhost:3001/getMovies')
+        .then(function (response) {
+            console.log(response)
+            return response.json();
+        });
 
-    yield put({ type: "SET_MOVIES_DATA", json: json.articles || [{ error: json.message }] });
+    console.log(movieResp)
+
+    yield put({ type: "SET_MOVIES_DATA", data: movieResp });
 }
 
 
@@ -25,7 +33,7 @@ function* bookMovie() {
 
     yield put({ type: "SET_SEAT_BOOK_COUNT", json: json.articles || [{ error: json.message }] });
     yield put({ type: "SET_BOOKING_STATUS", json: json.articles || [{ error: json.message }] });
-    
+
 }
 
 function* actionWatcher() {

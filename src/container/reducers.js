@@ -2,10 +2,11 @@ const initialState = {
     movieList: [],
     loginResp: {},
     bookCount: 0,
-    bookingStatus: ''
+    bookingStatus: '',
+    selectedMovie: ''
 }
 
-const reducer = (state = initialState, action) => {
+const movieReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'SET_MOVIES_DATA':
             return { ...state, movieList: action.data }
@@ -19,9 +20,13 @@ const reducer = (state = initialState, action) => {
         case 'SET_BOOKING_STATUS':
             return { ...state, bookingStatus: action.data }
 
+        case 'SET_SELECTED_MOVIE':
+            return { ...state, selectedMovie: action.data }
+
+
         default:
             return state;
     }
 };
 
-export default reducer;
+export default movieReducer;
