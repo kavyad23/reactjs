@@ -6,7 +6,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './container/reducers';
 import rootSaga from './container/sagas';
-
+import HeaderComponent from './pages/Header/HeaderComponent'
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -21,6 +21,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
+        <HeaderComponent></HeaderComponent>
         <Routes />
       </Provider>
     );

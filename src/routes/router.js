@@ -3,8 +3,9 @@ import LoginComponent from '../pages/Login/LoginComponent';
 import MovieDetailComponent from '../pages/MovieDetail/MovieDetailComponent';
 import MoviesComponent from '../pages/Movies/MoviesComponent';
 
+
 export const Routes = () => (
-    <Router>
+    <Router >
         <Route exact path='/ticket-booking/'>
             <LoginComponent />
         </Route>
