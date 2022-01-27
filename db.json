@@ -1,35 +1,185 @@
 {
-  "getMovies": [{
+  "getMovies": [
+    {
       "id": 1,
-      "movieName": "abc",
+      "movieName": "Black Panther",
       "category": "Action",
       "Rating": 4,
-      "imgUrl" :"../../common/img/movie.jpg"
-  }, {
+      "imgUrl": "../../common/img/movie.jpg"
+    },
+    {
       "id": 2,
-      "movieName": "dfg",
-      "category": "Action",
+      "movieName": "Candyman",
+      "category": "Drama",
       "Rating": 3,
-      "imgUrl" :""
-  }, {
+      "imgUrl": ""
+    },
+    {
       "id": 3,
-      "movieName": "bnm",
-      "category": "Love",
+      "movieName": "Hellbound",
+      "category": "Fantasy",
       "Rating": 4,
-      "imgUrl" :""
-  }, {
+      "imgUrl": ""
+    },
+    {
       "id": 4,
-      "movieName": "xyz",
+      "movieName": "Escape the Undertaker",
+      "category": "Mystery",
+      "Rating": 4,
+      "imgUrl": ""
+    },
+    {
+      "id": 5,
+      "movieName": "Quite Place",
+      "category": "Thriller",
+      "Rating": 4,
+      "imgUrl": ""
+    },
+    {
+      "id": 6,
+      "movieName": "Friends",
       "category": "Comedy",
       "Rating": 4,
-      "imgUrl" :""
-  }],
-  "comments": [{
+      "imgUrl": ""
+    }
+  ],
+  "theatreList": [
+    {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
-  }],
-  "profile": {
-      "name": "typicode"
-  }
+      "name": "Multiplex",
+      "location": "CDD",
+      "timeslot": [
+        "10.00 AM",
+        "12.00 PM",
+        "2.00 PM",
+        "4.00 PM"
+      ],
+      "advanceDateCount": 3,
+      "seatingData": [
+        {
+          "id": "1",
+          "booked": true
+        },
+        {
+          "id": "2",
+          "booked": false
+        },
+        {
+          "id": "3",
+          "booked": false
+        },
+        {
+          "id": "4",
+          "booked": false
+        },
+        {
+          "id": "5",
+          "booked": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Inox",
+      "location": "CDD",
+      "timeslot": [
+        "10.00 AM",
+        "12.00 PM",
+        "2.00 PM",
+        "4.00 PM"
+      ],
+      "advanceDateCount": 3,
+      "seatingData": [
+        {
+          "id": "1",
+          "booked": true
+        },
+        {
+          "id": "2",
+          "booked": false
+        },
+        {
+          "id": "3",
+          "booked": false
+        },
+        {
+          "id": "4",
+          "booked": false
+        },
+        {
+          "id": "5",
+          "booked": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sathyam",
+      "location": "CDD",
+      "timeslot": [
+        "10.00 AM",
+        "12.00 PM",
+        "2.00 PM",
+        "4.00 PM"
+      ],
+      "advanceDateCount": 3,
+      "seatingData": [
+        {
+          "id": "1",
+          "booked": true
+        },
+        {
+          "id": "2",
+          "booked": false
+        },
+        {
+          "id": "3",
+          "booked": false
+        },
+        {
+          "id": "4",
+          "booked": false
+        },
+        {
+          "id": "5",
+          "booked": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "KG",
+      "location": "CDD",
+      "timeslot": [
+        "10.00 AM",
+        "12.00 PM",
+        "2.00 PM",
+        "4.00 PM"
+      ],
+      "advanceDateCount": 4
+    }
+  ],
+  "seatingData": [
+    {
+      "id": "1",
+      "booked": false,
+      "amount": 150
+    },
+    {
+      "id": "2",
+      "booked": false
+    },
+    {
+      "id": "3",
+      "booked": false
+    },
+    {
+      "id": "4",
+      "booked": false
+    },
+    {
+      "id": "5",
+      "booked": false
+    }
+  ]
 }

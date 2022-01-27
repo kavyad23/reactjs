@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import LoginComponent from '../pages/Login/LoginComponent';
 import MovieDetailComponent from '../pages/MovieDetail/MovieDetailComponent';
 import MoviesComponent from '../pages/Movies/MoviesComponent';
-
+import ConfirmComponent from '../pages/Confirm/ConfirmComponent'
 
 export const Routes = () => (
     <Router >
@@ -15,6 +15,12 @@ export const Routes = () => (
         </Route>
         <Route exact path='/ticket-booking/booking'>
             <MovieDetailComponent />
+        </Route>
+        <Route exact path='/ticket-booking/confirm'>
+            <ConfirmComponent />
+        </Route>
+        <Route exact path="/">
+            <Redirect to="/ticket-booking/" />
         </Route>
     </Router>
 )

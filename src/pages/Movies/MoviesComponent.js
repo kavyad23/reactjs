@@ -8,15 +8,12 @@ import { selectedMovie } from '../../container/actions';
 
 class MoviesComponent extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         this.props.getMovies();
     }
 
     openMovieDetailPage = (movie) => {
+        console.log(movie)
         this.props.selectedMovie(movie);
         this.props.history.push('/ticket-booking/booking');
     }
@@ -47,7 +44,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         getMovies: () => dispatch(getMovies()),
-        selectedMovie: (params) => dispatch(selectedMovie()),
+        selectedMovie: (params) => dispatch(selectedMovie(params)),
     }
 }
 

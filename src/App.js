@@ -7,15 +7,12 @@ import { Provider } from 'react-redux';
 import rootSaga from './container/sagas';
 import HeaderComponent from './pages/Header/HeaderComponent'
 import mainReducer from './mainReducer';
-import composeWithDevTools from 'redux-devtools-extension';
 
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
   mainReducer,
-  composeWithDevTools(
-    applyMiddleware(sagaMiddleware)),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+  applyMiddleware(sagaMiddleware),
 );
 
 sagaMiddleware.run(rootSaga);

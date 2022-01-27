@@ -1,0 +1,103 @@
+.login-container {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2% 10%;
+     */
+    position: absolute;
+    width: 500px;
+    height: 240px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+    background: #94bedf;
+    padding: 30px;
+
+}
+
+.confirm-container {
+    position: absolute;
+    width: 700px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+    background: #94bedf;
+    padding: 30px;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.login-title {
+    float: left;
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.user-name, .pass-field {
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.user-name input, .pass-field input {
+    width: 225px;
+    height: 25px;
+}
+
+.button-field {
+    float: left;
+    width: 100%;
+    margin-left: 40%;
+}
+
+.error-field {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.error-field p {
+    color: red;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* CSS */
+.button-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button-10:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+}

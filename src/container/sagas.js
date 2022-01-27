@@ -11,18 +11,31 @@ function* getLoginResp() {
 
 function* getMovies() {
     console.log('getMovies')
-    // const json = yield fetch('/getmovies.json')
-    //     .then(response => response.json());
-
     const movieResp = yield fetch('http://localhost:3001/getMovies')
         .then(function (response) {
             console.log(response)
             return response.json();
         });
-
-    console.log(movieResp)
-
     yield put({ type: "SET_MOVIES_DATA", data: movieResp });
+}
+
+function* getTheatreList() {
+    console.log('getTheatreList')
+    const thrResp = yield fetch('http://localhost:3001/theatreList')
+        .then(function (response) {
+            console.log(response)
+            return response.json();
+        });
+    yield put({ type: "SET_THEATER_DATA", data: thrResp });
+}
+
+function* getAvailSeats() {
+    const thrResp = yield fetch('http://localhost:3001/seatingData')
+        .then(function (response) {
+            console.log(response)
+            return response.json();
+        });
+    yield put({ type: "SET_AVAIL_SEATS", data: thrResp });
 }
 
 
@@ -40,6 +53,10 @@ function* actionWatcher() {
     yield takeLatest('LOGIN_VALID', getLoginResp);
     yield takeLatest('GET_MOVIES', getMovies);
     yield takeLatest('BOOK_MOVIE', bookMovie);
+    yield takeLatest('GET_THEATRES', getTheatreList);
+    yield takeLatest('GET_AVAIL_SEATS', getAvailSeats);
+    
+    
 }
 
 

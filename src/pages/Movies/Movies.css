@@ -6,6 +6,34 @@
     margin: 2% 10%;
 }
 
+.seat-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seat-row-title {
+    padding: 10px;
+    margin: 10px;
+}
+
+.each-seat {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.booked-seat {
+    background-color: green !important;
+    color: white;
+}
+
 .movie-box {
     min-height: 300px;
     width: 15%;
@@ -37,25 +65,92 @@
 
 /* CSS */
 .button-10 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 30px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-  border-radius: 6px;
-  border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
 
-  color: #fff;
-  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
-   background-origin: border-box;
-  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-top: 20px;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 20px;
 }
 
 .button-10:focus {
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-  outline: 0;
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+}
+
+.movie-detail-page {
+    min-height: 600px;
+    margin: 2%;
+}
+
+.movie-detail-page .movie-box {
+    height: auto;
+    width: 25%;
+    float: left;
+}
+
+.movie-filters, .movie-seating {
+    float: left;
+    border: 1px solid;
+    padding: 20px;
+    margin: 20px;
+    width: 60%;
+}
+
+
+
+.float-left {
+    float: left;
+}
+
+.marginTopZero {
+    margin: 0px !important;
+    margin-left: 20px;
+}
+
+.margin10px {
+    margin: 10px;
+}
+
+.react-datepicker-wrapper {
+    float: left;
+    margin: 10px;
+    width: 175px;
+}
+
+.seat-display {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+.final-seat {
+    float: left;
+    width: 30%;
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.checkout-seat {
+    float: right;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.checkout-seat button {
+    float: right !important;
 }

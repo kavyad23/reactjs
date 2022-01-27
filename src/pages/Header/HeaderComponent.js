@@ -3,11 +3,6 @@ import { HeaderDiv } from '../../container/styled';
 import './HeaderComponent.css'
 
 class HeaderComponent extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <React.Fragment>
