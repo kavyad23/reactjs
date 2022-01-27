@@ -4,4 +4,16 @@
     padding: 25px;
     color: white;
     font-family: sans-serif;
+    width: 50%;
+    float: left;
+}
+
+.user-details {
+    width: 40%;
+    float: right;
+    font-size: 26px;
+    margin: 10px;
+    padding: 25px;
+    color: white;
+    font-family: sans-serif;
 }

@@ -54,29 +54,7 @@
         "2.00 PM",
         "4.00 PM"
       ],
-      "advanceDateCount": 3,
-      "seatingData": [
-        {
-          "id": "1",
-          "booked": true
-        },
-        {
-          "id": "2",
-          "booked": false
-        },
-        {
-          "id": "3",
-          "booked": false
-        },
-        {
-          "id": "4",
-          "booked": false
-        },
-        {
-          "id": "5",
-          "booked": false
-        }
-      ]
+      "advanceDateCount": 3
     },
     {
       "id": 2,
@@ -88,29 +66,7 @@
         "2.00 PM",
         "4.00 PM"
       ],
-      "advanceDateCount": 3,
-      "seatingData": [
-        {
-          "id": "1",
-          "booked": true
-        },
-        {
-          "id": "2",
-          "booked": false
-        },
-        {
-          "id": "3",
-          "booked": false
-        },
-        {
-          "id": "4",
-          "booked": false
-        },
-        {
-          "id": "5",
-          "booked": false
-        }
-      ]
+      "advanceDateCount": 3
     },
     {
       "id": 3,
@@ -122,29 +78,7 @@
         "2.00 PM",
         "4.00 PM"
       ],
-      "advanceDateCount": 3,
-      "seatingData": [
-        {
-          "id": "1",
-          "booked": true
-        },
-        {
-          "id": "2",
-          "booked": false
-        },
-        {
-          "id": "3",
-          "booked": false
-        },
-        {
-          "id": "4",
-          "booked": false
-        },
-        {
-          "id": "5",
-          "booked": false
-        }
-      ]
+      "advanceDateCount": 3
     },
     {
       "id": 4,
@@ -179,6 +113,46 @@
     },
     {
       "id": "5",
+      "booked": false
+    },
+    {
+      "id": "6",
+      "booked": false
+    },
+    {
+      "id": "7",
+      "booked": false
+    },
+    {
+      "id": "8",
+      "booked": false
+    },
+    {
+      "id": "9",
+      "booked": false
+    },
+    {
+      "id": "10",
+      "booked": false
+    },
+    {
+      "id": "11",
+      "booked": false
+    },
+    {
+      "id": "12",
+      "booked": false
+    },
+    {
+      "id": "13",
+      "booked": false
+    },
+    {
+      "id": "14",
+      "booked": false
+    },
+    {
+      "id": "15",
       "booked": false
     }
   ]

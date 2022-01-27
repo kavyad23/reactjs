@@ -1,4 +1,5 @@
-import React, { useState, connect } from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom'
 import './Login.css'
 import { storeLoginDetails } from '../../container/actions'
@@ -53,11 +54,17 @@ function LoginComponent(props) {
 }
 
 
+const mapStateToProps = (state) => {
+    const { movieReducer } = state;
+    return {
+        selectedMovie: movieReducer.selectedMovie,
+    }
+}
+
 const mapDispatchToProps = (dispatch) => {
     return {
         storeLoginDetails: (data) => dispatch(storeLoginDetails(data)),
     }
 }
 
-export default withRouter(connect(null, mapDispatchToProps)(LoginComponent))
-
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(LoginComponent))

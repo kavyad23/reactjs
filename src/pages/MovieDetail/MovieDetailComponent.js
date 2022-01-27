@@ -36,12 +36,13 @@ function MovieDetailComponent(props) {
         props.getTheatreList();
     }, [])
 
+
     const selectTheatre = (e) => {
         props.getAvailSeats();
 
-        setTheatreName(props.theatreList?.filter(x => x.id === e.target.value)[0]);
-        setTimeslotList(props.theatreList?.filter(x => x.id === e.target.value)[0]?.timeslot);
-        setDateslot(props.theatreList?.filter(x => x.id === e.target.value)[0]?.advanceDateCount);
+        setTheatreName(props.theatreList?.filter(x => x.id == e.target.value)[0]);
+        setTimeslotList(props.theatreList?.filter(x => x.id == e.target.value)[0]?.timeslot);
+        setDateslot(props.theatreList?.filter(x => x.id == e.target.value)[0]?.advanceDateCount);
     }
 
     const checkSeats = (e) => {
@@ -59,14 +60,14 @@ function MovieDetailComponent(props) {
 
     return (
         <div>
-            <div className="movie-detail-page float-left">
+            <div className="movie-detail-page">
                 <div className="movie-box">
-                    <img src={movie} className="movie-image" alt=""/>
+                    <img src={movie} className="movie-image" alt="" />
                     <div className="movie-category">{props.selectedMovie?.category}</div>
                     <div className="movie-title">{props.selectedMovie?.movieName}</div>
                 </div>
                 <div className='movie-filters'>
-                    <select onChange={(e) => selectTheatre(e)} className='float-left margin10px'>
+                    <select onChange={(e) => selectTheatre(e)} className='float-left margin10px width20'>
                         <option value="">Select Theater</option>
                         {props.theatreList.map(theatre =>
                             <option
@@ -81,7 +82,7 @@ function MovieDetailComponent(props) {
                     <DatePicker selected={startDate} onChange={(date) => setStartDate(date)}
                         minDate={new Date(today)} maxDate={new Date(maxDate)} disabled={!theatreName} />
 
-                    <select onChange={(e) => setSelectedTimeSlot(e.target.value)} className='float-left margin10px' disabled={!theatreName}>
+                    <select onChange={(e) => setSelectedTimeSlot(e.target.value)} className='float-left margin10px width20' disabled={!theatreName}>
                         <option value="">Select Time</option>
                         {timeslotList?.map(timeSlt =>
                             <option
@@ -110,7 +111,7 @@ function MovieDetailComponent(props) {
                         Total Amount: {props.totalAmount}
                     </div>
                     <div className='checkout-seat'>
-                        <button className="button-10 marginTopZero" onClick={goToConfirmationPage}>Checkout</button>
+                        <button className="button-10 marginTopZero" onClick={goToConfirmationPage} disabled={props.totalAmount === 0}>Checkout</button>
                     </div>
 
                 </div>
